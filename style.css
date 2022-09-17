@@ -1,0 +1,118 @@
+.start-project-btn:hover {
+    background-color: #1fc6d8;
+    border-color: #1fc6d8;
+}
+
+video {
+    filter: brightness(70%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(facade.jpg) no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+    z-index: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header img {
+        width: 55px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header img {
+        width: 55px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header img {
+        width: 55px;
+        margin-left: 0px;
+    }
+}
+
+.header-logo:before {
+
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+}
+
+.button {
+    width: 50px;
+    background-color: #1baebe;
+    border-color: #1baebe;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.hero--home:before {
+    background: rgba(0, 0, 0, .5);
+}
+
+.floating-arrow {
+    -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
+
+@keyframes floating-arrow {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    65% {
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+::selection {
+    background: #1fc6d8;
+}
+
+.deco-line:after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #1fc6d8;
+}
+
+.social-links a {
+    margin-right: 25px;
+}
+
+#new {
+    padding: 0px;
+}
